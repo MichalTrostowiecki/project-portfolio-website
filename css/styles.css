@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* header styles */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+.header-links {
+    display: flex;
+}
+
+.header-links ul {
+    display: flex;
+    align-items: center;
+}
+
+.header-links li {
+    list-style: none;
+    padding: 10px;
+}
+
+.header-links a {
+    text-decoration: none;
+}
+
+/* when hoover over a link it gets coloured */
+a:hover {
+    color: red;
+}
+
+/* main styles */
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 60% 15%;
+    grid-template-areas: 
+    "about-section"
+    "work-section"
+    "contact-section";
+    padding: 80px;
+    gap: 30px;
+}
+
+.hero-banner {
+    background-image: url("../images/hero-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    height: 400px;
+    background-color: black; 
+}
+
+/* About section */
+
+.about-section {
+    grid-area: about-section;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "about-title about-text";
+}
+
+.about-section-title {
+    grid-area: about-title;
+}
+
+.about-section-text {
+    grid-area: about-text;
+}
+
+/* Work section */
+
+.work-section {
+    grid-area: work-section;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "work-title project-container";
+    height: 100%;
+}
+
+.work-section-title {
+    grid-area: work-title;
+}
+
+.work-project-container {
+    grid-area: project-container;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50% 25% 25%;
+    grid-template-areas: 
+    "main-project main-project"
+    "project project"
+    "project project";
+    gap: 10px;
+}
+
+#main-project {
+    grid-area: main-project;
+}
+
+/* Project styles */
+
+#main-project {
+    background-image: url("../images/project1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#project2 {
+    background-image: url("../images/project1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+#project3 {
+    background-image: url("../images/project1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+#project4 {
+    background-image: url("../images/project1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+#project5 {
+    background-image: url("../images/project1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+/* Contact section */
+
+.contact-section {
+    grid-area: contact-section;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "contact-title contact-links";
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-links a {
+    text-decoration: none;
+}
+
+.contact-links li {
+    list-style: none;
+}
+
+/* footer section */
+footer {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+/* Media Queries */
+

@@ -4,70 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" />
     <title>Michal Trostowiecki</title>
     <link rel="stylesheet" href="./css/styles.css" type="text/css">
 </head>
 <body>
     <!-- main logo / nav -->
-    <header>
-        <h1>Michal Trostowiecki</h1>
-        <h2>FrontEnd Developer</h2>
-        <nav>
+    <header class="header">
+        <div class="header-logo">
+            <h1>Michal Trostowiecki</h1>
+            <h2>FrontEnd Developer</h2>
+        </div>
+        <nav class="header-links">
             <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact Me</a></li>
-                <li><a href="#">Resume</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="https://drive.google.com/file/d/1kF-41XrZuHcvUs70XxJeTmov6hHC6tlc/view?usp=sharing">Resume</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <!-- hero banner -->
-        <section class="hero-banner">
+    
+    <!-- hero banner -->
+    <section class="hero-banner">
 
-        </section>
+    </section>
+    <main class="main-content">
 
         <!-- about me -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Passionate about web development, I discovered my love for creating fromscratch while working as a Personal Trainer.
-                Starting with a basic online shoptemplate, I quickly realized the potential for improvement and began exploringHTML.
-                This initial encounter ignited a deep fascination, leading me to delve intoJavaScript, CSS, and more recently, React. 
-                My unwavering dedication tocontinuous learning and professional growth has driven me to transition into acareer in Frontend,
-                Backend, or Full Stack development. Eager to embrace anyrole that offers opportunities for growth and allows me to make
-                valuablecontributions within a collaborative team environment.
-            </p>
+        <section class="about-section" id="about">
+            <div class="about-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-text">
+                <p>
+                    Passionate about web development, I discovered my love for creating from scratch while working as a Personal Trainer.
+                    Starting with a basic online shop template, I quickly realized the potential for improvement and began exploring HTML.
+                    This initial encounter ignited a deep fascination, leading me to delve into JavaScript, CSS, and more recently, React. 
+                    My unwavering dedication to continuous learning and professional growth has driven me to transition into a career in Frontend,
+                    Backend, or Full Stack development. Eager to embrace any role that offers opportunities for growth and allows me to make
+                    valuable contributions within a collaborative team environment.
+                </p>
+            </div>
         </section>
 
         <!-- projects / work -->
-        <section id="work">
-            <h2>Work</h2>
-            <article>
-                <h3>Project 1</h3>
-                <p>technologies</p>
-            </article>
-            <article>
-                <h3>Project 2</h3>
-                <p>technologies</p>
-            </article>
-            <article>
-                <h3>Project 3</h3>
-                <p>technologies</p>
-            </article>
-            <article>
-                <h3>Project 4</h3>
-                <p>technologies</p>
-            </article>
-            <article>
-                <h3>Project 5</h3>
-                <p>technologies</p>
-            </article>
+        <section class="work-section" id="work">
+            <div class="work-title">
+                <h2>Work</h2>
+            </div>
+            <div class="project-container">
+                <article class="project" id="main-project">
+                    <a href="#">
+                        <h3>Project 1</h3>
+                        <p>technologies</p>
+                    </a>
+                </article>
+                <article class="project" id="project2">
+                    <a href="#">
+                        <h3>Project 2</h3>
+                        <p>technologies</p>
+                    </a>
+                </article>
+                <article class="project" id="project3">
+                    <a href="#">
+                        <h3>Project 3</h3>
+                        <p>technologies</p>
+                    </a>
+                </article>
+                <article class="project" id="project4">
+                    <a href="#">
+                        <h3>Project 4</h3>
+                        <p>technologies</p>
+                    </a>
+                </article>
+                <article class="project" id="project5">
+                    <a href="#">
+                        <h3>Project 5</h3>
+                        <p>technologies</p>
+                    </a>
+                </article>
+            </div>
         </section>
 
         <!-- contact -->
-        <section id="contact">
-            <h2>Contact Me</h2>
+        <section class="contact-section" id="contact">
+            <div class="contact-title">
+                <h2>Contact Me</h2>
+            </div>
+            <ul class="contact-links">
+                <li><a href="">Mobile</a></li>
+                <li><a href="">Email</a></li>
+                <li><a href="">GitHub</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Spotify</a></li>
+            </ul>
         </section>
     </main>
     <footer>
