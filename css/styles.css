@@ -4,10 +4,13 @@
     --theme-color: #e53170;
 }
 
+/* Prevent horizontal scrolling */
 body, html {
     overflow-x: hidden;
 }
 
+
+/* Global styles */
 body {
     margin: 0;
     padding: 0;
@@ -15,7 +18,6 @@ body {
 }
 
 /* header styles */
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -37,6 +39,7 @@ body {
     margin-top: 10px;
 }
 
+/* Header links styles */
 .header-links {
     display: flex;
 }
@@ -58,13 +61,13 @@ body {
     color: var(--text-color);
 }
 
-/* when hoover over a link it gets coloured */
+/* Link hover effect */
 a:hover {
     color: var(--theme-color);
 }
 
 
-/* main styles */
+/* Main content styles */
 
 .main-content {
     display: grid;
@@ -83,6 +86,7 @@ a:hover {
     
 }
 
+/* Hero banner styles */
 .hero-banner img {
     width: 100vw;
     max-height: 400px; 
@@ -93,7 +97,7 @@ a:hover {
 
 
 
-/* Title styles for section */
+/* Section title styles */
 
 .about-title,
 .work-title,
@@ -116,7 +120,7 @@ a:hover {
 }
 
 
-/* About section */
+/* About section styles */
 
 .about-section {
     grid-area: about-section;
@@ -160,6 +164,8 @@ a:hover {
     grid-area: project-container;
 }
 
+
+/* project styles */
 .project-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -194,7 +200,6 @@ a:hover {
     color: var(--text-color);    
 }
 
-/* Project title styling - Work section */
 .project {
     position: relative;
 }
@@ -205,6 +210,7 @@ a:hover {
     box-shadow: 0 0 30px black;
 }
 
+/* Project title styling - Work section */
 .project-title {
     background-color: #0f0e1788;
     position: absolute;
@@ -236,6 +242,7 @@ a:hover {
     align-items: center;
 }
 
+/* Contact Links styles */
 .contact-links {
     grid-area: contact-links;
     display: flex;
@@ -268,7 +275,7 @@ footer {
 /* Media Queries */
 
 
-/* Extra Small devices (phones) */
+/* Small devices (phones) */
 @media only screen and (max-width: 772px) {
 
     body, html {
@@ -408,7 +415,7 @@ footer {
         font-size: 0.9rem;
     }
 
-
+    /* Galaxy Fold media query styles */
     @media only screen and (max-width: 280px) {
 
         .header-links ul {
@@ -426,16 +433,20 @@ footer {
 
         .project-title {
             height: 50%;
+            justify-content: center;
+            align-content: flex-start;
+            flex-wrap: wrap;
         }
-
+        
+        .project-title h3 {
+            margin: 0;
+        }
         .project-title h3, p {
             margin: 0px auto;
             font-size: 0.8rem;
-        }
-
-        .project-title h3 {
-            margin-top: 8px;
+            margin-left: 4px;
         }
     }
-
 }
+
+
