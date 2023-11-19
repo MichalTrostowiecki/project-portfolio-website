@@ -370,10 +370,20 @@ footer {
 
     .project-title {
         height: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     #main-project .project-title {
         height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .project-title h3, p {
+        margin: 0 5px;
     }
 
     .project:hover {
@@ -429,5 +439,3 @@ footer {
     }
 
 }
-
-
