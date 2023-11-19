@@ -285,11 +285,14 @@ footer {
     }
 
     .header-links {
-        display: none;
+        display: flex;
+        justify-content: center;
     }
 
     .header-links a {
         margin: auto 10px;
+        width: 100%;
+        display: inline-block;
     }
 
     .hero-banner img {
@@ -385,6 +388,36 @@ footer {
 
     .contact-links a {
         font-size: 0.9rem;
+    }
+
+
+    @media only screen and (min-width: 280px) {
+
+        .header-links ul {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .header-links a {
+            margin: 0;
+        }
+
+        #main-project .project-title {
+            height: 30%;
+        }
+
+        .project-title {
+            height: 50%;
+        }
+
+        .project-title h3, p {
+            margin: 0px auto;
+            font-size: 0.8rem;
+        }
+
+        .project-title h3 {
+            margin-top: 8px;
+        }
     }
 
 }
