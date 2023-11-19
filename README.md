@@ -15,7 +15,7 @@ N/A
 
 ## Usage 
 
-Website Link : https://michaltrost Aowiecki.github.io/project-portfolio-website/
+Website Link : https://michaltrostowiecki.github.io/project-portfolio-website/
 
 ![Alt Text](./images/Screenshot%20(2).png)
 
