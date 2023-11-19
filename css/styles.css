@@ -75,7 +75,7 @@ a:hover {
         "work-section"
         "contact-section";
     padding: 20px;
-    gap: 30px;
+    gap: 70px;
     max-width: 1200px;
     margin: 0 auto;
     background-color: #fffffe;
@@ -131,10 +131,14 @@ a:hover {
     grid-area: about-title;
 }
 
-
-
 .about-text {
     grid-area: about-text;
+}
+
+.about-text p {
+    padding: 0 20px;
+    line-height: 1.3rem;
+    margin-top: 0;
 }
 
 /* Work section */
@@ -307,6 +311,7 @@ footer {
             "contact-section";
         padding: 20px 2%;
         max-width: 100vw;
+        gap: 30px;
     }
 
     .about-title h2,
@@ -384,7 +389,4 @@ footer {
 
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-
-}
 
