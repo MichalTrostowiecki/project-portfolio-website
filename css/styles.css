@@ -368,6 +368,14 @@ footer {
         gap: 10px;
     }
 
+    .project-title {
+        height: 45%;
+    }
+
+    #main-project .project-title {
+        height: 25%;
+    }
+
     .project:hover {
         transform: none
     }
@@ -391,7 +399,7 @@ footer {
     }
 
 
-    @media only screen and (min-width: 280px) {
+    @media only screen and (max-width: 280px) {
 
         .header-links ul {
             flex-direction: row;
